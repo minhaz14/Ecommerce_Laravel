@@ -75,30 +75,32 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="https://laravel-ecommerce-eshop.herokuapp.com/admin_panel">
-                                <i class="menu-icon mdi mdi-television"></i>
-                                <span class="menu-title">Dashboard</span>
-                            </a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="{{route('all_products')}}">
-                                <i class="menu-icon mdi mdi-cart-outline"></i>
-                                <span class="menu-title">Products</span>
-                            </a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="https://laravel-ecommerce-eshop.herokuapp.com/admin_panel/categories">
-                                <i class="menu-icon mdi mdi-view-grid"></i>
-                                <span class="menu-title">Categories</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://laravel-ecommerce-eshop.herokuapp.com/admin_panel/management">
-                                <i class="menu-icon mdi mdi-content-paste"></i>
-                                <span class="menu-title">Order Management</span>
-                            </a>
-                        </li>
+                        
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{route('dash_board')}}">
+                                    <i class="menu-icon mdi mdi-television"></i>
+                                    <span class="menu-title">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="{{route('all_products')}}">
+                                    <i class="menu-icon mdi mdi-cart-outline"></i>
+                                    <span class="menu-title">Products</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  ">
+                                <a class="nav-link" href="{{route('categories')}}">
+                                    <i class="menu-icon mdi mdi-view-grid"></i>
+                                    <span class="menu-title">Categories</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{route('ordermanagement')}}">
+                                    <i class="menu-icon mdi mdi-content-paste"></i>
+                                    <span class="menu-title" onclick="myFunction()">Order Management</span>
+                                </a>
+                            </li>
+                                           
                     </ul>
                 </nav>
                 <!-- partial -->
@@ -106,6 +108,7 @@
           
                
                @yield('allproducts')
+               @yield('addproducts')
                @yield('categories')
                @yield('dashboard')
                @yield('order_management')

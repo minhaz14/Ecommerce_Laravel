@@ -9,7 +9,7 @@
         <div class="col-lg-12 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Products Table <a class="btn btn-lg btn-success" style="float:right;color:white" href="https://laravel-ecommerce-eshop.herokuapp.com/admin_panel/products/create">+ Add Product</a></h4>
+                    <h4 class="card-title">Products Table <a class="btn btn-lg btn-success" style="float:right;color:white" href="{{route('add_products')}}">+ Add Product</a></h4>
                     <br><br>
                     <div class="table-responsive">
                         <table class="table table-striped">
