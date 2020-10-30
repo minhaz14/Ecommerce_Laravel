@@ -11,6 +11,7 @@
                 <div class="card-body">
                     <h4 class="card-title">Products Table <a class="btn btn-lg btn-success" style="float:right;color:white" href="{{route('add_products')}}">+ Add Product</a></h4>
                     <br><br>
+                    @include ('admin.partials.sessionMessage')
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <thead>
@@ -42,27 +43,35 @@
                             </thead>
                             <tbody>
 
-
-                                @foreach($products as $product)
+                            @foreach ($prod as $prod) 
                                     <tr>
                                         <td>
-                                            <img src="../uploads/products/15/1.jpg" style="width:100px;height:100px;border-radius:10%;" alt="">
+                                        @php $i=1;  @endphp
+                                        @foreach($prod->images as $image)
+                                            @if($i>0)
+
+                                            <img src=" {{asset('img/'.$image->image)}}" style="width:60px;height:60px;border-radius:10%;" alt="">
+                                            @endif
+                                            @php $i--;  @endphp
+                                        @endforeach
+
                                         </td>
 
                                         <td>
-                                        <a href="#" class="btn btn-warning">{{ $product->title }}</a>
+                                        <a href="#" class="btn btn-warning">{{$prod->title}}</a>
                                         </td>
 
                                         <td>
-                                        <a href="#"class="btn btn-danger">Delete</a>
+                                        {{ csrf_field() }}
+                                        <a href="{{route('product.destroy',$prod->id)}}"class="btn btn-danger">Delete</a>
                                         </td>
 
                                         <td>
-                                            31500
+                                          {{$prod->Discounted_Price}}
                                         </td>
 
                                         <td>
-                                            &lt;p&gt;Model - Canon PowerShot SX730 HS&lt;br /&gt;Resolution (MP) - 20.3 Mega pixels&lt;br /&gt;Display (Inch) - 3&quot; TFT Color LCD Display&lt;br /&gt;Optical Zoom (X) - 40x&lt;br /&gt;Battery - NB-13L Battery&lt;/p&gt;
+                                         {{$prod->description}}
                                         </td>
 
                                         <td>
@@ -75,7 +84,7 @@
                                         
                                     </tr>
                                 @endforeach
-                           
+                                
                            </tbody>
                         </table>
                     </div>

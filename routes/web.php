@@ -32,6 +32,7 @@ Route::group(['prefix' => 'admin'], function(){
     Route::get('/allproducts','App\Http\Controllers\AdminPagesController@all_products')->name('all_products');
     Route::get('/addproducts','App\Http\Controllers\AdminPagesController@add_products')->name('add_products');//pproduct add page
     Route::post('/product/create','App\Http\Controllers\AdminPagesController@product_store')->name('admin.product.store');//product add function
+    Route::get('/product/delete/{id}','App\Http\Controllers\productController@destroy_products')->name('product.destroy');
     
 
     

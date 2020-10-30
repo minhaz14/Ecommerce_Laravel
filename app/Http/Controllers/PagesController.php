@@ -10,9 +10,9 @@ class PagesController extends Controller
     public function index()
     {
       
-        $products =Product::orderBy('id', 'desc')->get();
+        $pro =Product::orderBy('id', 'desc')->get();
       // return view('user.product')->with('products',$products);
-       return view('user.index',compact('products'));
+       return view('user.index',compact('pro'));
 
       // return response()->json($pro);
       

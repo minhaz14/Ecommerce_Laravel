@@ -17,25 +17,26 @@
                 <!-- Products tab & slick -->
                 <div class="col-md-12">
                     <div class="row">
-                       @foreach ($products as $product) 
+                       @foreach ($pro as $pro) 
                             <div class="col-md-3">
                                 <div class="product">
                                     <div class="product-img">
                                     @php $i=1;  @endphp
-                                    @foreach ($products->images as $image)
-                                      @if($i>0)
-                                        <img src="{{ asset('img/'.$image->image)}}" alt="">
-                                      @endif
-                                      @php $i--;  @endphp
-                                    @endforeach()
+                                        @foreach($pro->images as $image)
+                                            @if($i>0)
+                                            <img src="{{asset('img/'.$image->image)}}" alt="">
+                                            @endif
+                                            @php $i--;  @endphp
+                                        @endforeach
+                                     
                                         <div class="product-label">
                                             <span class="sale">Offer!!</span>
                                         </div>
                                     </div>
                                     <div class="product-body">
                                         <p class="product-category">Computer</p>
-                                        <h3 class="product-name"><a href="#">{{$products->title}}</a></h3>
-                                        <h4 class="product-price">{{$products->price}} <del class="product-old-price">{{$products->Discounted_Price}}</del></h4>
+                                        <h3 class="product-name"><a href="#">{{$pro->title}}</a></h3>
+                                        <h4 class="product-price">{{$pro-> Discounted_Price}} <del class="product-old-price">{{$pro->price}}</del></h4>
                                         <!-- <div class="product-rating"> 
                                         </div> -->
                                         

@@ -15,4 +15,18 @@ class ProductController extends Controller
 
     //   // return response()->json($pro);
     // }
+
+
+   
+
+    public function destroy_products($id) {
+        $product = Product::find($id);
+        $product->delete();
+        session()->flash('success','Product has deleted successfully !!!');
+        return back();
+        // return view("pages.products.show")
+        //     ->with("product", $product);
+    }
+
+
 }

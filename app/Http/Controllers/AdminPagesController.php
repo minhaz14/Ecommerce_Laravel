@@ -20,7 +20,10 @@ class AdminPagesController extends Controller
 
     public function all_products()
     {
-       return view('admin.products.allproducts');
+      $prod =Product::orderBy('id', 'desc')->get();
+       return view('admin.products.allproducts',compact('prod'));
+       //return view('user.index',compact('prod'));
+       //return response()->json($prod);
     }
 
     public function add_products()
