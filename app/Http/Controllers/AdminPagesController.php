@@ -5,6 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Product;
 
+
+use App\Models\ProductImage;
+use Image;
+
+
 class AdminPagesController extends Controller
 {
     public function adminPages()
@@ -67,20 +72,20 @@ class AdminPagesController extends Controller
 
         ///product image insert
 
-      //   if($request->hasFile('product_image')){
-      //       //inert that image
-      //       $image=$request->file('product_image');
-      //       $img=time() .'.'. $image->getClientOriginalExtension();
+        if($request->hasFile('product_image')){
+            //inert that image
+            $image=$request->file('product_image');
+            $img=time() .'.'. $image->getClientOriginalExtension();
             
-      //       $location=public_path('images/products/' .$img);
-      //       Image::make($image)->save ($location);
+            $location=public_path('img/' .$img);
+            Image::make($image)->save ($location);
 
-      //       $product_image=new ProductImage;
-      //       $product_image->product_id=$product->id;
-      //       $product_image->image=$img;
-      //       $product_image->save();
+            $product_image=new ProductImage;
+            $product_image->product_id=$product->id;
+            $product_image->image=$img;
+            $product_image->save();
 
-      //   }       
+        }       
         return redirect()->route ('add_products');
     }
 

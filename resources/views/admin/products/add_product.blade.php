@@ -47,10 +47,10 @@
                                             </div>
 
 
-                                            <!-- <div class="form-group">
+                                             <div class="form-group">
                                                 <label for="exampleFormControlInput1">Product Image</label>
                                                 <input type="file" class="form-control" name= "product_image" id="product_image" >
-                                            </div> -->
+                                            </div> 
 
 
 
