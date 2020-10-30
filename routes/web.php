@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/','App\Http\Controllers\PagesController@index')->name('index');
+//Route::get('/bal','App\Http\Controllers\PagesController@bal')->name('bal');
+//Route::get('/bal','App\Http\Controllers\productController@show_products')->name('show_products');//sho products from database in product page
+
 //Route::get('/welcome','App\Http\Controllers\AdminPagesController@welcome')->name('welcome');
 
 
@@ -29,6 +32,9 @@ Route::group(['prefix' => 'admin'], function(){
     Route::get('/allproducts','App\Http\Controllers\AdminPagesController@all_products')->name('all_products');
     Route::get('/addproducts','App\Http\Controllers\AdminPagesController@add_products')->name('add_products');//pproduct add page
     Route::post('/product/create','App\Http\Controllers\AdminPagesController@product_store')->name('admin.product.store');//product add function
+    
+
+    
     Route::get('/categories','App\Http\Controllers\AdminPagesController@categories')->name('categories');
     Route::get('/dashboard','App\Http\Controllers\AdminPagesController@dashboard')->name('dash_board');
     Route::get('/ordermanagement','App\Http\Controllers\AdminPagesController@ordermanagement')->name('ordermanagement');
