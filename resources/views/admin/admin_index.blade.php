@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Star Admin Dashboard</title>
         <!-- plugins:css -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <link rel="stylesheet" href="https://laravel-ecommerce-eshop.herokuapp.com/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
         <link rel="stylesheet" href="https://laravel-ecommerce-eshop.herokuapp.com/vendors/css/vendor.bundle.base.css">
         <link rel="stylesheet" href="https://laravel-ecommerce-eshop.herokuapp.com/vendors/css/vendor.bundle.addons.css">
@@ -19,6 +20,16 @@
         <!-- endinject -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <link rel="shortcut icon" href="https://laravel-ecommerce-eshop.herokuapp.com/favicon.png" />
+        <link type="text/css" rel="stylesheet" href="{{ asset ('css/style.css')}}" />
+
+
+        <script>
+            function myFunction() {
+                document.getElementById("demo").style.color = "red";
+            }
+        </script>
+
+        
     </head>
 
     <body>
@@ -66,7 +77,7 @@
                                         <img src="https://laravel-ecommerce-eshop.herokuapp.com/images/faces/face1.jpg" alt="profile image">
                                     </div>
                                     <div class="text-wrapper">
-                                        <p class="profile-name">Electro</p>
+                                        <p class="profile-name">Minhaz</p>
                                         <div>
                                             <small class="designation text-muted">Admin</small>
                                             <span class="status-indicator online"></span>
@@ -76,28 +87,28 @@
                             </div>
                         </li>
                         
-                            <li class="nav-item">
+                            <li class="nav-item acti_v">
                                 <a class="nav-link" href="{{route('dash_board')}}">
-                                    <i class="menu-icon mdi mdi-television"></i>
-                                    <span class="menu-title">Dashboard</span>
+                                    <i class="fas fa-tv"></i>
+                                    <span class="dash">Dashboard</span>
                                 </a>
                             </li>
-                            <li class="nav-item ">
+                            <li class="nav-item acti_v">
                                 <a class="nav-link" href="{{route('all_products')}}">
-                                    <i class="menu-icon mdi mdi-cart-outline"></i>
-                                    <span class="menu-title">Products</span>
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span class="dash">Products</span>
                                 </a>
                             </li>
-                            <li class="nav-item  ">
+                            <li class="nav-item  acti_v">
                                 <a class="nav-link" href="{{route('categories')}}">
-                                    <i class="menu-icon mdi mdi-view-grid"></i>
-                                    <span class="menu-title">Categories</span>
+                                    <i class="fas fa-list-alt"></i>
+                                    <span  class="dash">Categories</span>
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item acti_v">
                                 <a class="nav-link" href="{{route('ordermanagement')}}">
-                                    <i class="menu-icon mdi mdi-content-paste"></i>
-                                    <span class="menu-title" onclick="myFunction()">Order Management</span>
+                                    <i class="fas fa-tasks"></i>
+                                    <span id="demo" class="dash" onclick="myFunction()">Order Management</span>
                                 </a>
                             </li>
                                            

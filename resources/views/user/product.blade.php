@@ -17,7 +17,8 @@
                 <!-- Products tab & slick -->
                 <div class="col-md-12">
                     <div class="row">
-                       @foreach ($pro as $pro) 
+                       
+                       @foreach(App\Models\Product::orderBy('id','desc') -> get() as $pro)
                             <div class="col-md-3">
                                 <div class="product">
                                     <div class="product-img">
@@ -34,7 +35,7 @@
                                         </div>
                                     </div>
                                     <div class="product-body">
-                                        <p class="product-category">Computer</p>
+                                        <p class="product-category">{{ $pro->category->name}}</p>
                                         <h3 class="product-name"><a href="#">{{$pro->title}}</a></h3>
                                         <h4 class="product-price">{{$pro-> Discounted_Price}} <del class="product-old-price">{{$pro->price}}</del></h4>
                                         <!-- <div class="product-rating"> 

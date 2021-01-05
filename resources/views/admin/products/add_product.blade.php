@@ -64,7 +64,7 @@
                                                 <select class="form-control form-control-md" id="Category" name="Category">
                                                 <option value=2 >Smart Phone </option><option value=3 >Headphone </option><option value=4 >Camera </option><option value=5 >Powerbank </option><option value=6 >Gaming </option><option value=7 >Tab </option><option value=8 >Smartwatch </option><option value=9 >Speaker </option><option value=10 >Accessory </option><option value=1 >Computer </option>                                            </select>
                                             </div> -->
-                                            <div class="form-group">
+                                            <div class="form-group aformedit">
                                                 <label  >Product Price*</label>
                                                 <input type="text" class="form-control" name="Price" id="Price" value="" placeholder="12345">
                                             </div>
@@ -75,12 +75,28 @@
                                                 <input type="text" class="form-control" id="Discounted_Price"  name="Discounted_Price" value=""placeholder="123454">
                                             </div>
 
+
+
+
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail" >Select Product Category</label>
+                                                <select class="form-control" name="category_id">
+                                                    <option value="">plese select a category</option>
+                                                    @foreach(App\Models\Category::orderBy('name','asc')->get() as $category)
+                                                    <option value="{{$category->id}}">{{$category->name}}</option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+   
+
+
+
                                             <div class="form-group">
                                                 <label for="exampleFormControlInput1">Quantity</label>
                                                 <input type="number" class="form-control" name= "quantity"placeholder="0" id="exampleFormControlInput1" >
                                             </div>
 
-                                            <div class="form-group">
+                                            <div class="form-group aformedit" >
                                                 <label  >Slug</label>
                                                 <input type="text" class="form-control" id="Name" placeholder="Product Name"  name="slug"  value=""placeholder="slug">
                                             </div>

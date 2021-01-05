@@ -75,7 +75,7 @@
                                         </td>
 
                                         <td>
-                                            Camera
+                                            {{$prod->category->name}}
                                         </td>
                                         
                                         <td>

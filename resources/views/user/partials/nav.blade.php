@@ -16,18 +16,33 @@
                     </div>
                     <!-- /LOGO -->
 
+
+
+
+
                     <!-- SEARCH BAR -->
-                    <div class="col-md-6">
-                        <div class="header-search">
-                            <form action="#" method="get">
-                                <div class="custom_search_top" >
-                                    <input class="input" style="border-radius: 40px 0px 0px 40px;" name="n" placeholder="Search here">
-                                    <button  class="search-btn">Search</button>
-                                </div>
-                            </form>
+                    
+                        <div class="col-md-6">
+                            <div class="header-search">
+                                <form action="{{ route('search') }}" method="get">
+                                {{ csrf_field() }}
+                                    <div class="custom_search_top" >
+                                        <input class="input" style="border-radius: 40px 0px 0px 40px;" name="search" placeholder="Search here">
+                                        <button  class="search-btn">Search</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-                    </div>
+                     
+
                     <!-- /SEARCH BAR -->
+
+
+
+
+
+
+
 
                     <!-- ACCOUNT -->
                     <div class="col-md-3 clearfix">
@@ -60,8 +75,6 @@
     </div>
         <!-- /MAIN HEADER -->
 
- 
- 
  
  
  

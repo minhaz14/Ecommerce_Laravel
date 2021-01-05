@@ -13,7 +13,15 @@
 
 
 @if (Session::has('success'))
-    <div class="alert alert-danger">
+    <div class="alert alert-danger fade-message">
         <p>{{ Session::get('success') }}</p>
     </div>
+
+    <script>
+    $(function(){
+        setTimeout(function() {
+            $('.fade-message').slideUp();
+        }, 2000);
+    });
+    </script>
 @endif

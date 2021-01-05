@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use App\Models\Category;
 
 
 use App\Models\ProductImage;
@@ -32,8 +33,11 @@ class AdminPagesController extends Controller
     }
 
     public function categories()
-    {
-       return view('admin.products.categories');
+    {   
+      $catg =Category::orderBy('id', 'desc')->get();
+      
+      
+       return view('admin.products.categories',compact('catg'));
     }
 
     public function dashboard()
@@ -68,7 +72,7 @@ class AdminPagesController extends Controller
         $product->slug=$request->slug;
 
         
-        $product->category_id=1;
+        $product->category_id=$request->category_id;
         $product->brand_id=1;
         $product->admin_id=1;
         $product->save();
@@ -90,8 +94,11 @@ class AdminPagesController extends Controller
 
         }       
         return redirect()->route ('add_products');
-    }
+      }
+
+  
 
 
+      
 
 }
