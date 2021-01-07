@@ -4,7 +4,9 @@
 
 @section('categories')
 
-
+<script>
+    document.getElementById("category").className = "javaScriptChange";
+</script>
 
 <div class="main-panel">
 <div class="content-wrapper">

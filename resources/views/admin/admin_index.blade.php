@@ -23,11 +23,7 @@
         <link type="text/css" rel="stylesheet" href="{{ asset ('css/style.css')}}" />
 
 
-        <script>
-            function myFunction() {
-                document.getElementById("demo").style.color = "red";
-            }
-        </script>
+        
 
         
     </head>
@@ -69,7 +65,7 @@
             <div class="container-fluid page-body-wrapper">
                 <!-- partial:partials/_sidebar.html -->
                 <nav class="sidebar sidebar-offcanvas" id="sidebar">
-                    <ul class="nav">
+                    <ul class="nav" id="javas">
                         <li class="nav-item nav-profile">
                             <div class="nav-link">
                                 <div class="user-wrapper">
@@ -90,25 +86,25 @@
                             <li class="nav-item acti_v">
                                 <a class="nav-link" href="{{route('dash_board')}}">
                                     <i class="fas fa-tv"></i>
-                                    <span class="dash">Dashboard</span>
+                                    <span class="dash " id="dashboard">Dashboard</span>
                                 </a>
                             </li>
                             <li class="nav-item acti_v">
                                 <a class="nav-link" href="{{route('all_products')}}">
                                     <i class="fas fa-shopping-cart"></i>
-                                    <span class="dash">Products</span>
+                                    <span class="dash" id="product">Products</span>
                                 </a>
                             </li>
                             <li class="nav-item  acti_v">
                                 <a class="nav-link" href="{{route('categories')}}">
                                     <i class="fas fa-list-alt"></i>
-                                    <span  class="dash">Categories</span>
+                                    <span  class="dash" id="category">Categories</span>
                                 </a>
                             </li>
                             <li class="nav-item acti_v">
                                 <a class="nav-link" href="{{route('ordermanagement')}}">
                                     <i class="fas fa-tasks"></i>
-                                    <span id="demo" class="dash" onclick="myFunction()">Order Management</span>
+                                    <span id="demo" class="dash" id="orderManagement">Order Management</span>
                                 </a>
                             </li>
                                            
