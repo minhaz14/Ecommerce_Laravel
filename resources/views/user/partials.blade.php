@@ -60,11 +60,18 @@
         </head>
 
         <body>
+        
 
             <header>
+           
+
                 @include('user.partials.top_nav')
                 @include('user.partials.nav')
                 @include('user.partials.category')
+
+                @if(Session::has('success'))
+                  <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('success') }}</p>
+                @endif
 
 
             
@@ -73,6 +80,8 @@
 
                 @yield('search')
                 @yield('show_category')
+
+                @yield('carts')
 
 
 

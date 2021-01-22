@@ -7,13 +7,10 @@
                 <!-- row -->
                 <div class="row">
                     <!-- LOGO -->
-                    <div class="col-md-3">
-                        <div class="header-logo">
-                            <a href="#" class="logo">
-                                <img src="{{ asset ('/img/logo.png')}}" alt="">
-                            </a>
-                        </div>
-                    </div>
+                   
+                                <!-- <img src="{{ asset ('/img/logo.png')}}" alt=""> -->
+                                <a class="logospan" href="">Bee<span>Shop</span></a>
+                     
                     <!-- /LOGO -->
 
 
@@ -49,8 +46,8 @@
                         <div class="header-ctn">
                             <!-- Cart -->
                             <div  class="dropdown">
-                                <a class="dropdown-toggle " id="custom_shopping_cart" href="#">
-                                    <i class="fa fa-shopping-cart"></i>
+                                <a class="dropdown-toggle " id="custom_shopping_cart" href="{{ route('carts') }}">
+                                    <i class="fa fa-shopping-cart"><span class="badge badge-danger">{{ App\Models\Cart::totalItems() }}</span></i>
                                     <span>Your Cart</span>
                                 </a>
 

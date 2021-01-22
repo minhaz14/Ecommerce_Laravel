@@ -4,8 +4,8 @@
             <div class="container">
                 <ul id="head_links" class="header-links pull-left">
                     <li><a href="#"><i class="fa fa-phone"></i> +000-00-00-00</a></li>
-                    <li><a href="#"><i class="far fa-envelope"></i> support@electro.com</a></li>
-                    <li><a href="#"><i class="far fa-map-marker-alt"></i> Banani, Road 11</a></li>
+                    <li><a href="#"><i class="far fa-envelope"></i> Beeshop@gmail.com</a></li>
+                    <li><a href="#"><i class="far fa-map-marker-alt"></i> Rampura, Road 4</a></li>
                 </ul>
                     @if (Route::has('login'))
                     <ul class="header-links pull-right">

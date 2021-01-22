@@ -33,7 +33,8 @@ Route::get('/category/{id}','App\Http\Controllers\PagesController@show')->name('
 Route::group(['prefix' => 'admin'], function(){
 
     Route::get('/','App\Http\Controllers\AdminPagesController@adminPages')->name('adminPages');
-    
+
+    //product add delet show routes
     Route::get('/allproducts','App\Http\Controllers\AdminPagesController@all_products')->name('all_products');
     Route::get('/addproducts','App\Http\Controllers\AdminPagesController@add_products')->name('add_products');//pproduct add page
     Route::post('/product/create','App\Http\Controllers\AdminPagesController@product_store')->name('admin.product.store');//product add function
@@ -43,10 +44,11 @@ Route::group(['prefix' => 'admin'], function(){
     //categorys routes and functions
     Route::get('/categories','App\Http\Controllers\AdminPagesController@categories')->name('categories');
     Route::post('/addcategorys','App\Http\Controllers\CategoryController@category_store')->name('admin.category.store');//category add//store
+    Route::post('/category/edit/','App\Http\Controllers\CategoryController@edit_categories')->name('category.edit');
     Route::get('/category/delete/{id}','App\Http\Controllers\CategoryController@destroy_categories')->name('category.destroy');
+     
 
-
-
+    
 
 
     Route::get('/dashboard','App\Http\Controllers\AdminPagesController@dashboard')->name('dash_board');
@@ -55,6 +57,17 @@ Route::group(['prefix' => 'admin'], function(){
 
     
 });
+
+Route::group(['prefix' => 'carts'], function(){
+
+    Route::get('/','App\Http\Controllers\CartController@index')->name('carts');
+    Route::post('/store','App\Http\Controllers\CartController@store')->name('carts.store');
+    Route::post('/update/{id}','App\Http\Controllers\CartController@update')->name('carts.update');
+    Route::post('/delete/{id}','App\Http\Controllers\CartController@destroy')->name('carts.delete');
+});
+
+
+
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

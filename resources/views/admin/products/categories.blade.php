@@ -85,7 +85,7 @@
                                     <td>{{$catg->created_at}}</td>
                                     <td> {{$catg->updated_at}}</td>
                                     <td>
-                                        <a href="#" class="btn btn-warning">Edit</a>
+                                        <a href="{{route('category.edit')}}" class="btn btn-warning">Edit</a>
                                     </td>
                                     <td>
                                         <a href="{{route('category.destroy',$catg->id)}}" onclick="delete()" class="btn btn-danger">Delete</a>

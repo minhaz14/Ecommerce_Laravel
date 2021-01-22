@@ -1,7 +1,9 @@
 
 <div class="section">
+    
         <!-- container -->
     <div class="container">
+    
             <!-- row -->
             <div class="row">
 
@@ -9,10 +11,11 @@
                 <div class="col-md-12">
                     <div class="section-title">
                         <h3 class="title">New Products</h3>
-
+                      
                     </div>
                 </div>
                 <!-- /section title -->
+              
 
                 <!-- Products tab & slick -->
                 <div class="col-md-12">
@@ -43,7 +46,14 @@
                                         
                                     </div>
                                     <div class="add-to-cart">
-                                        <a class="add-to-cart-btn" href="#"><i class="fa fa-shopping-cart"></i>Purchase</a>
+                                           <form action="{{ route('carts.store') }}"  method="post">
+                                                @csrf
+                                                <input type="hidden" name="product_id" value="{{ $pro->id }}">
+                                                 <!-- <a type="submit" class="add-to-cart-btn" ><i class="fa fa-shopping-cart"></i>Add To Cart</a>  -->
+                                                <button type="submit" class="add-to-cart-btn " name="button"><i class="fa fa-shopping-cart"></i>add to cart</button>
+                                           </form>
+                                    
+                                        
                                     </div>
                                 </div>
                             </div>

@@ -38,6 +38,14 @@ class CategoryController extends Controller
       // return view("pages.products.show")
       //     ->with("product", $product);
     }
+    public function edit_categories()
+    {
+      
+        
+         return view('admin.products.categoryedit');
+        // return view('admin.products.dashboard');
+
+    }
 
 
 }

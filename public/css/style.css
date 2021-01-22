@@ -133,3 +133,38 @@
 .fa-sign-out-alt{
   color: aliceblue;
 }
+
+
+.buttonChange{
+  height:1px;
+}
+.badge{
+  background-color: #ecca08;
+}
+.badge-danger{
+  color:rgb(179, 3, 3);
+  font-size:10px;
+  margin-bottom: 17px;
+}
+/* logospan */
+
+.logospan{
+  color:rgb(1, 163, 128);
+  font-size:35px;
+  padding-top:16px;
+  padding-right:90px;
+  float: left;
+  font-weight: 600;
+}
+
+.logospan span{
+  color:white;
+
+}
+.logospan:hover{
+  color:#FFF;
+}
+.logospan span:hover{
+  color:rgb(1, 163, 128);
+
+}

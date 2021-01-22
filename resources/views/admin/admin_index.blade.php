@@ -119,6 +119,8 @@
                @yield('categories')
                @yield('dashboard')
                @yield('order_management')
+               @yield('catedit')
+               
 
 
 
