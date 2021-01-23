@@ -5,7 +5,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Star Admin Dashboard</title>
+        <title></title>
         <!-- plugins:css -->
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <link rel="stylesheet" href="https://laravel-ecommerce-eshop.herokuapp.com/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
@@ -34,23 +34,23 @@
             <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
                 <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
                     <a class="navbar-brand brand-logo" href="https://laravel-ecommerce-eshop.herokuapp.com/admin_panel">
-                        <div style="color: #007bff;">Electro</div>
+                        <div style="color: #007bff;"></div>
                     </a>
                     <a class="navbar-brand brand-logo-mini" href="https://laravel-ecommerce-eshop.herokuapp.com/admin_panel">
-                        <div style="color: #007bff;">Electro</div>
+                        <div style="color: #007bff;">Minhaz</div>
                     </a>
                 </div>
                 <div class="navbar-menu-wrapper d-flex align-items-center">
                     <ul class="navbar-nav navbar-nav-right">
                         <li class="nav-item dropdown d-none d-xl-inline-block">
                             <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-                                <span class="profile-text">Electro</span>
+                                <span class="profile-text"</span>
                                 <img class="img-xs rounded-circle" src="https://laravel-ecommerce-eshop.herokuapp.com/images/faces/face1.jpg" alt="Profile image">
-                            </a>
+                            minhaz</a>
                             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
                                 <br>
                                 <br>
-                                <a class="dropdown-item" href="https://laravel-ecommerce-eshop.herokuapp.com/admin/logout">
+                                <a class="dropdown-item" href="#">
                                     Sign Out
                                 </a>
                             </div>

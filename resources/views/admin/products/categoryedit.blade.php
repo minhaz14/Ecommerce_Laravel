@@ -14,7 +14,7 @@
                                         <input type="hidden" name="_token" value="F4ps472TR07olNPVwBDooUcvcsjwvKBpAGVPioIQ">
 
                                        @csrf
-                                        
+                                       
                                         <div class="form-group row">
                                             <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Name</label>
                                             <div class="col-sm-9">

@@ -31,7 +31,7 @@
                                                 <tbody>
                                                                                     <tr>
                                                         <td class="font-weight-medium">
-                                                            2019-02-02 07:32:33
+                                                            2020-01-02 07:32:33
                                                         </td>
                                                         <td class="font-weight-medium">
                                                             On Process
@@ -42,7 +42,7 @@
                                                     </tr>
                                                                                     <tr>
                                                         <td class="font-weight-medium">
-                                                            2019-02-11 14:12:27
+                                                            2020-01-11 14:12:27
                                                         </td>
                                                         <td class="font-weight-medium">
                                                             Cancel
@@ -53,7 +53,7 @@
                                                     </tr>
                                                                                     <tr>
                                                         <td class="font-weight-medium">
-                                                            2019-02-13 09:51:07
+                                                            2020-01-13 09:51:07
                                                         </td>
                                                         <td class="font-weight-medium">
                                                             Placed
@@ -64,7 +64,7 @@
                                                     </tr>
                                                                                     <tr>
                                                         <td class="font-weight-medium">
-                                                            2019-02-06 12:05:30
+                                                            2020-01-06 12:05:30
                                                         </td>
                                                         <td class="font-weight-medium">
                                                             Delivered
@@ -75,7 +75,7 @@
                                                     </tr>
                                                                                     <tr>
                                                         <td class="font-weight-medium">
-                                                            2019-02-07 16:29:16
+                                                            2020-01-07 16:29:16
                                                         </td>
                                                         <td class="font-weight-medium">
                                                             Delivered
@@ -86,7 +86,7 @@
                                                     </tr>
                                                                                     <tr>
                                                         <td class="font-weight-medium">
-                                                            2019-02-11 16:56:54
+                                                            2020-01-11 16:56:54
                                                         </td>
                                                         <td class="font-weight-medium">
                                                             Placed
@@ -97,7 +97,7 @@
                                                     </tr>
                                                                                     <tr>
                                                         <td class="font-weight-medium">
-                                                            2019-02-05 12:24:53
+                                                            2020-01-05 12:24:53
                                                         </td>
                                                         <td class="font-weight-medium">
                                                             Delivered
@@ -108,7 +108,7 @@
                                                     </tr>
                                                                                     <tr>
                                                         <td class="font-weight-medium">
-                                                            2019-02-11 17:07:40
+                                                            2020-01-11 17:07:40
                                                         </td>
                                                         <td class="font-weight-medium">
                                                             Delivered
@@ -117,71 +117,7 @@
                                                             71000
                                                         </td>
                                                     </tr>
-                                                                                    <tr>
-                                                        <td class="font-weight-medium">
-                                                            2019-02-10 07:33:46
-                                                        </td>
-                                                        <td class="font-weight-medium">
-                                                            On Process
-                                                        </td>
-                                                        <td class="font-weight-medium">
-                                                            30000
-                                                        </td>
-                                                    </tr>
-                                                                                    <tr>
-                                                        <td class="font-weight-medium">
-                                                            2019-02-14 20:54:08
-                                                        </td>
-                                                        <td class="font-weight-medium">
-                                                            Cancel
-                                                        </td>
-                                                        <td class="font-weight-medium">
-                                                            111000
-                                                        </td>
-                                                    </tr>
-                                                                                    <tr>
-                                                        <td class="font-weight-medium">
-                                                            2020-10-26 06:01:27
-                                                        </td>
-                                                        <td class="font-weight-medium">
-                                                            Cancel
-                                                        </td>
-                                                        <td class="font-weight-medium">
-                                                            205000
-                                                        </td>
-                                                    </tr>
-                                                                                    <tr>
-                                                        <td class="font-weight-medium">
-                                                            2019-02-05 04:55:26
-                                                        </td>
-                                                        <td class="font-weight-medium">
-                                                            Placed
-                                                        </td>
-                                                        <td class="font-weight-medium">
-                                                            10500
-                                                        </td>
-                                                    </tr>
-                                                                                    <tr>
-                                                        <td class="font-weight-medium">
-                                                            2019-02-11 17:09:49
-                                                        </td>
-                                                        <td class="font-weight-medium">
-                                                            Cancel
-                                                        </td>
-                                                        <td class="font-weight-medium">
-                                                            24000
-                                                        </td>
-                                                    </tr>
-                                                                                    <tr>
-                                                        <td class="font-weight-medium">
-                                                            2019-02-11 17:09:12
-                                                        </td>
-                                                        <td class="font-weight-medium">
-                                                            On Process
-                                                        </td>
-                                                        <td class="font-weight-medium">
-                                                            3500
-                                                        </td>
+                                                                                   
                                                     </tr>
                                                 </tbody>
                                             </table>

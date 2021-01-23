@@ -22,7 +22,7 @@
                     <div class="row">
                        
                        @foreach(App\Models\Product::orderBy('id','desc') -> get() as $pro)
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <div class="product">
                                     <div class="product-img">
                                     @php $i=1;  @endphp
