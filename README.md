@@ -1,4 +1,8 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://github.com/minhaz14/Ecommerce_Laravel/blob/master/public/img/1.jpg" width="400"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://github.com/minhaz14/Ecommerce_Laravel/blob/master/public/img/screen%20shotes/1.png" width="400"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://github.com/minhaz14/Ecommerce_Laravel/blob/master/public/img/screen%20shotes/2.png" width="400"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://github.com/minhaz14/Ecommerce_Laravel/blob/master/public/img/screen%20shotes/3.png" width="400"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://github.com/minhaz14/Ecommerce_Laravel/blob/master/public/img/screen%20shotes/4.png" width="400"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://github.com/minhaz14/Ecommerce_Laravel/blob/master/public/img/screen%20shotes/5.png" width="400"></a></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
