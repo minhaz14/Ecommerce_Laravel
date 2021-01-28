@@ -1,3 +1,21 @@
+## About Laravel
+
+The Project is a  simple E-commerce website build with the technology (Laravel v7, Laravel jetstrem Auth, Bootstrap, Html and Css).the pages and componets are as follows,
+
+- product page with search system.
+- category, category wise product show.
+- product add in cart,cart edit delet and order .
+- payment syatem home dalivery,will be added payment system (paypal, Bikash, Rocket, Nagad).
+- Admin page, product add, delete,edit, ordermanagement order dashboard page ,category edit, delet and update page.
+- admin login system and many more.
+
+
+
+
+
+
+
+
 ## User Pages
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://github.com/minhaz14/Ecommerce_Laravel/blob/master/public/img/screen%20shotes/1.png" width="900" height="500"></a></p>
 

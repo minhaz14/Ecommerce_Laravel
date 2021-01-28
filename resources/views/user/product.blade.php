@@ -50,7 +50,7 @@
                                                 @csrf
                                                 <input type="hidden" name="product_id" value="{{ $pro->id }}">
                                                  <!-- <a type="submit" class="add-to-cart-btn" ><i class="fa fa-shopping-cart"></i>Add To Cart</a>  -->
-                                                <button type="submit" class="add-to-cart-btn " name="button"><i class="fa fa-shopping-cart"></i>add to cart</button>
+                                                <button type="submit" class="add-to-cart-btn " name="button"><i class="fa fa-shopping-cart"></i>add</button>
                                            </form>
                                     
                                         
