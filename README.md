@@ -1,4 +1,4 @@
-## About Laravel
+## About The Project
 
 The Project is a  simple E-commerce website build with the technology (Laravel v7, Laravel jetstrem Auth, Bootstrap, Html and Css).the pages and componets are as follows,
 
