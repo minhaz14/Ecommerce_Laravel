@@ -46,7 +46,7 @@
                             <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
                                 <span class="profile-text"</span>
                                 <img class="img-xs rounded-circle" src="https://laravel-ecommerce-eshop.herokuapp.com/images/faces/face1.jpg" alt="Profile image">
-                            minhaz</a>
+                            Minhaz</a>
                             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
                                 <br>
                                 <br>

@@ -68,6 +68,16 @@ Route::group(['prefix' => 'carts'], function(){
 
 
 
+Route::group(['prefix' => 'checkout'], function(){
+
+    Route::get('/','App\Http\Controllers\CheckoutController@index')->name('checkout');
+    Route::post('/store','App\Http\Controllers\CheckoutController@store')->name('checkout.store');
+    Route::post('/update/{id}','App\Http\Controllers\CheckoutController@update')->name('checkout.update');
+    
+});
+
+
+
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

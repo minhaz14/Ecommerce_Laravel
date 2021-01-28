@@ -8,7 +8,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-            <title>ShopMakers</title>
+            <title>Bee Shop</title>
 
              <link rel="" href="{{ asset('img/log2.png')}}" /> 
             <!-- Google font -->
@@ -82,6 +82,8 @@
                 @yield('show_category')
 
                 @yield('carts')
+                
+
 
 
 
